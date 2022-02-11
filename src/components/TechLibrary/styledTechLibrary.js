@@ -2,14 +2,12 @@ import styled from "styled-components"
 
 
 export const Container = styled.div`
-   border: 2px solid red;
    height: 100vh;
    display: grid;
    flex-direction: column;
 `
 
 export const BackgroundContainer = styled.div`
-   border: 6px solid green;
    height: 50vh;
    display: flex;
    flex-direction: row;
@@ -17,7 +15,6 @@ export const BackgroundContainer = styled.div`
 `
 
 export const ImgContainer = styled.div`
-   border: 4px solid blue;
    width: 100%;
    height: 50vh;
    position: absolute;
@@ -29,23 +26,9 @@ export const ImgContainer = styled.div`
    }
 `
 
-
-export const BookcaseContainer = styled.div`
-   border: 2px solid yellow;
-   width: 40%;
-   height: 47vh;
-   margin-top: 15%;
-   position: relative;
-
-   img {
-      width: 100%;
-      height: 100%;
-   }
-`
 export const ClockContainer = styled.div`
-   border: 1px solid red;
    width: 20%;
-   height: 40%;
+   height: 44%;
    position: relative;
    margin-top: 6%;
 
@@ -56,9 +39,8 @@ export const ClockContainer = styled.div`
    `
 
 export const LogoContainer = styled.div`
-   border: 1px solid red;
    width: 20%;
-   height: 50%;
+   height: 52%;
    margin-top: 6%;
    position: relative;
    
@@ -71,18 +53,21 @@ export const LogoContainer = styled.div`
 export const PurpleBackground = styled.div`
    height: 40vh;
    display: flex;
-   flex-direction: row;
+   
 `
 
 export const BoardContainer = styled.div`
-   
+   width: 50%;
+   height: 70%;
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   margin-right: 50%;
 `
 
 export const ImgPurpleContainer = styled.div`
    width: 100%;
    height: 50vh;
-   position: absolute;
-   border: 3px solid black;
 
    img {
       width: 100%;
@@ -92,10 +77,14 @@ export const ImgPurpleContainer = styled.div`
 `
 
 export const ImgBoardContainer = styled.div`
-   border: 2px solid black;
-   width: 10vw;
-   height: 20vh;
-   position: relative;
+   width: 56%;
+   height: 50%;
+   margin-top: 8%;
+   margin-left: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
 
    img {
       width: 100%;
@@ -104,13 +93,52 @@ export const ImgBoardContainer = styled.div`
 `
 
 export const LadyContainer = styled.div`
-   border: 2px solid black;
-   width: 10vw;
-   height: 20vh;
-   position: relative;
+   width: 47%;
+   height: 65%;
+   margin-bottom: 7%;
+   position: absolute;
 
    img {
       width: 100%;
       height: 100%;
+   }
+`
+export const BoardTitle = styled.div`
+   width: 20%;
+   height: 10%;
+   position: absolute;
+   text-align: center;
+   margin-bottom: 16%;
+   margin-right: 8%;
+`
+export const BoardButton = styled.div`
+   width: 35%;
+   height: 10%;
+   position: absolute;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 2%;
+
+   button {
+      width: 24%;
+      height: 100%;
+      border: none;
+      background-color: white;
+   }
+`
+export const AlphabeticContainer = styled.div`
+   width: 35%;
+   height: 100%;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 64%;
+
+   img {
+      width: 80%;
+      height: 54%;
    }
 `
