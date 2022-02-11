@@ -1,7 +1,6 @@
 import {
   BackgroundContainer,
   BoardContainer,
-  BookcaseContainer,
   ClockContainer,
   Container,
   ImgContainer,
@@ -12,24 +11,19 @@ import {
   ImgBoardContainer,
   BoardTitle,
   BoardButton,
-  AlphabeticContainer,
-  ColorsContainer,
-  SizesContainer,
-  ButtonContainer,
 } from "./styledTechLibrary";
 import bgStripes from "../../assets/bg_stripes.svg";
 import ground from "../../assets/ground.svg";
-import bookcase from "../../assets/bookcase.svg";
 import clockBase from "../../assets/clock_base.svg";
 import logo from "../../assets/logo.svg";
 import board from "../../assets/board.svg";
 import lady from "../../assets/lady.svg";
 import filter_button from "../../assets/filter_button.svg";
-import filter_alphabetic from "../../assets/filter_alphabetic.svg";
-import filter_colors from "../../assets/filter_colors.svg";
-import filter_sizes from "../../assets/filter_sizes.svg";
-import button from "../../assets/button.svg"
-
+import SortAlphabetically from "../SortAlphabetically/SortAlphabetically";
+import SortByColor from "../SortByColor/SortByColor";
+import SortBySize from "../SortBySize/SortBySize";
+import Bookcase from "../Bookcase/Bookcase";
+import OrganizeButton from "../OrganizeButton/OrganizeButton";
 
 const TechLibrary = () => {
   return (
@@ -43,9 +37,7 @@ const TechLibrary = () => {
           <img src={clockBase} alt={"Imagem de Relógio"} />
         </ClockContainer>
 
-        <BookcaseContainer>
-          <img src={bookcase} alt={"Bookcase"} />
-        </BookcaseContainer>
+        <Bookcase />
 
         <LogoContainer>
           <img src={logo} alt={"Bookcase"} />
@@ -82,24 +74,14 @@ const TechLibrary = () => {
                 <img src={filter_button} alt={""} />
               </button>
 
-              <AlphabeticContainer>
-                <img src={filter_alphabetic} alt={""} />
-              </AlphabeticContainer>
+              <SortAlphabetically />
 
-              <ColorsContainer>
-                <img src={filter_colors} alt={""} />
-              </ColorsContainer>
+              <SortByColor />
 
-              <SizesContainer>
-                <img src={filter_sizes} alt={""} />
-              </SizesContainer>
+              <SortBySize />
             </BoardButton>
 
-            <ButtonContainer>
-                <button>
-                <img src={button} alt={""} />
-                </button>
-            </ButtonContainer>
+            <OrganizeButton />
           </ImgBoardContainer>
         </BoardContainer>
       </PurpleBackground>

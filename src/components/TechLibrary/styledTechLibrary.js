@@ -26,18 +26,6 @@ export const ImgContainer = styled.div`
    }
 `
 
-
-export const BookcaseContainer = styled.div`
-   width: 40%;
-   height: 45vh;
-   margin-top: 15%;
-   position: relative;
-
-   img {
-      width: 100%;
-      height: 100%;
-   }
-`
 export const ClockContainer = styled.div`
    width: 20%;
    height: 44%;
@@ -80,7 +68,6 @@ export const BoardContainer = styled.div`
 export const ImgPurpleContainer = styled.div`
    width: 100%;
    height: 50vh;
-   border: 3px solid black;
 
    img {
       width: 100%;
@@ -153,51 +140,5 @@ export const AlphabeticContainer = styled.div`
    img {
       width: 80%;
       height: 54%;
-   }
-`
-
-export const ColorsContainer = styled.div`
-   width: 32%;
-   height: 100%;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-   img {
-      width: 80%;
-      height: 54%;
-   }
-`
-
-
-export const SizesContainer = styled.div`
-   width: 32%;
-   height: 100%;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-left: 62%;
-
-   img {
-      width: 80%;
-      height: 54%;
-   }
-`
-
-export const ButtonContainer = styled.div`
-   width: 30%;
-   height: 10%;
-   position: absolute;
-   display: flex;
-   margin-top: 16%;
-   margin-right: 2%;
-
-   button {
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      border: none;
    }
 `
