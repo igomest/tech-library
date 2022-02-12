@@ -120,25 +120,24 @@ export const BoardButton = styled.div`
    align-items: center;
    text-align: center;
    margin-bottom: 2%;
+`
+
+export const ButtonContainer = styled.div`
+   width: 20%;
+   height: 80%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
    button {
-      width: 24%;
+      width: 100%;
       height: 100%;
-      border: none;
-      background-color: white;
+      background: var(--background);
+      border: 0;
+      border-radius: 10px;
    }
-`
-export const AlphabeticContainer = styled.div`
-   width: 35%;
-   height: 100%;
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 64%;
 
    img {
-      width: 80%;
-      height: 54%;
+      height: 2rem;
    }
 `

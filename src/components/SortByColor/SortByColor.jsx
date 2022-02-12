@@ -1,12 +1,14 @@
-import { ColorsContainer } from "./styledSortByColor"
-import filter_colors from "../../assets/filter_colors.svg";
+import filterColors from "../../assets/filter_colors.svg";
+import { ButtonContainer } from "../TechLibrary/styledTechLibrary"
 
 
 const SortByColor = () => {
     return (
-        <ColorsContainer>
-           <img src={filter_colors} alt={""} />
-      </ColorsContainer>
+        <ButtonContainer>
+            <button>
+                <img src={filterColors} alt={'Botão'} />
+            </button>
+        </ButtonContainer>
     )
 }
 

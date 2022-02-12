@@ -11,19 +11,18 @@ import {
   ImgBoardContainer,
   BoardTitle,
   BoardButton,
-} from "./styledTechLibrary";
-import bgStripes from "../../assets/bg_stripes.svg";
-import ground from "../../assets/ground.svg";
-import clockBase from "../../assets/clock_base.svg";
-import logo from "../../assets/logo.svg";
-import board from "../../assets/board.svg";
-import lady from "../../assets/lady.svg";
-import filter_button from "../../assets/filter_button.svg";
-import SortAlphabetically from "../SortAlphabetically/SortAlphabetically";
-import SortByColor from "../SortByColor/SortByColor";
-import SortBySize from "../SortBySize/SortBySize";
-import Bookcase from "../Bookcase/Bookcase";
-import OrganizeButton from "../OrganizeButton/OrganizeButton";
+} from "./styledTechLibrary"
+import bgStripes from "../../assets/bg_stripes.svg"
+import ground from "../../assets/ground.svg"
+import clockBase from "../../assets/clock_base.svg"
+import logo from "../../assets/logo.svg"
+import board from "../../assets/board.svg"
+import lady from "../../assets/lady.svg"
+import SortAlphabetically from "../SortAlphabetically/SortAlphabetically"
+import SortByColor from "../SortByColor/SortByColor"
+import SortBySize from "../SortBySize/SortBySize"
+import Bookcase from "../Bookcase/Bookcase"
+import OrganizeButton from "../OrganizeButton/OrganizeButton"
 
 const TechLibrary = () => {
   return (
@@ -62,22 +61,8 @@ const TechLibrary = () => {
             </BoardTitle>
 
             <BoardButton>
-              <button>
-                <img src={filter_button} alt={""} />
-              </button>
-
-              <button>
-                <img src={filter_button} alt={""} />
-              </button>
-
-              <button>
-                <img src={filter_button} alt={""} />
-              </button>
-
               <SortAlphabetically />
-
               <SortByColor />
-
               <SortBySize />
             </BoardButton>
 

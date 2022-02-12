@@ -1,12 +1,14 @@
-import { SizesContainer } from "./styledSortBySize"
-import filter_sizes from "../../assets/filter_sizes.svg"
+import filterSizes from "../../assets/filter_sizes.svg"
+import { ButtonContainer } from "../TechLibrary/styledTechLibrary"
 
 const SortBySize = () => {
   return (
-    <SizesContainer>
-      <img src={filter_sizes} alt={""} />
-    </SizesContainer>
-  );
-};
+    <ButtonContainer>
+      <button>
+        <img src={filterSizes} alt={'Botão'} />
+      </button>
+    </ButtonContainer>
+  )
+}
 
-export default SortBySize;
+export default SortBySize

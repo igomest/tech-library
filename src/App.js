@@ -1,15 +1,6 @@
 import TechLibrary from "./components/TechLibrary/TechLibrary"
-import { createGlobalStyle } from 'styled-components'
+import { GlobalStyle } from "./styles/global"
 
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-`
 
 const App = () => {
   return (
