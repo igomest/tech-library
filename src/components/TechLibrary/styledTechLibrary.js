@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
    height: 100vh;
-   display: grid;
+   display: flex;
    flex-direction: column;
 `
 
@@ -12,6 +12,13 @@ export const BackgroundContainer = styled.div`
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
+
+   @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
 `
 
 export const ImgContainer = styled.div`
@@ -36,6 +43,12 @@ export const ClockContainer = styled.div`
       width: 100%;
       height: 100%;
    }
+
+   @media screen and (max-width: 600px) {
+      img {
+         display: none;
+      }
+   }
    `
 
 export const LogoContainer = styled.div`
@@ -47,6 +60,12 @@ export const LogoContainer = styled.div`
    img {
       width: 100%;
       height: 100%;
+   }
+
+   @media screen and (max-width: 600px) {
+      width: 50%;
+      height: 60%;
+      margin-top: 62%;
    }
 `
 
@@ -79,7 +98,7 @@ export const ImgPurpleContainer = styled.div`
 export const ImgBoardContainer = styled.div`
    width: 56%;
    height: 50%;
-   margin-top: 8%;
+   margin-top: 18%;
    margin-left: 20%;
    display: flex;
    flex-direction: column;
@@ -90,17 +109,32 @@ export const ImgBoardContainer = styled.div`
       width: 100%;
       height: 100%;
    }
+
+   @media screen and (max-width: 600px) {
+      width: 60rem;
+      height: 20rem;
+      margin-bottom: 28%;
+      margin-left: 16%;
+   }
 `
 
 export const LadyContainer = styled.div`
-   width: 47%;
-   height: 65%;
-   margin-bottom: 7%;
+   width: 40%;
+   height: 60%;
+   margin-top: 8%;
    position: absolute;
+   margin-left: 7%;
 
    img {
       width: 100%;
       height: 100%;
+   }
+
+   @media screen and (max-width: 600px) {
+      width: 15rem;
+      /* height: 20rem; */
+      margin-bottom: 28%;
+      margin-left: 16%;
    }
 `
 export const BoardTitle = styled.div`
